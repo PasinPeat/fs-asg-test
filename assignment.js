@@ -9,7 +9,6 @@ const StoreFoodSets = [
   { name: "Orange set", price: 120 },
 ];
 
-
 const calculatePrice = (foodSets, isMemberCard) => {
   const initialPrice = 0;
   const totalPrice = foodSets.reduce(
@@ -32,7 +31,7 @@ const calculatePrice = (foodSets, isMemberCard) => {
         SetCount.Green++;
     }
   });
-  console.log(SetCount);
+
   if (
     (SetCount.Green % 2 === 0 && SetCount.Green > 0) ||
     (SetCount.Pink % 2 === 0 && SetCount.Pink > 0) ||
@@ -40,8 +39,6 @@ const calculatePrice = (foodSets, isMemberCard) => {
   ) {
     isDiscountFivePercent = true;
   } else isDiscountFivePercent = false;
-
-  console.log({ isMemberCard, isDiscountFivePercent });
 
   //  check the discount condition and calculate totalPrice
   if (isDiscountFivePercent && isMemberCard) {
@@ -55,6 +52,4 @@ const calculatePrice = (foodSets, isMemberCard) => {
   }
 };
 
-module.exports = calculatePrice
-// <----------------------------------------------------------------------------------------------->
-
+module.exports = calculatePrice;
