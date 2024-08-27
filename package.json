@@ -1,0 +1,15 @@
+{
+  "name": "ooca-coding-test",
+  "version": "1.0.0",
+  "description": "This Assignment is about showing how to calculate total price from ordered food menu",
+  "main": "assignment.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
